@@ -1,0 +1,8 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¯€ˆ‹üÿÿÿÿ8µîÊšÜ/
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8¸îÊšÜ/
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8¹îÊšÜ/
+j
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(É¡³±8ÒîÊšÜ/

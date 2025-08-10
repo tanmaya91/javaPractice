@@ -3,17 +3,32 @@ package leetcode.strings;
 public class ReverseLettersOnly {
     public static void main (String[] args) {
         String str= "1ab2";
+        System.out.println("the  revers of letters only in string is : " + reverseString(str));
 
     }
 
     public static String reverseString(String str){
         StringBuilder s = new StringBuilder();
-        for  (int left =0; left< s.length(); left++){
-            if (Character.isLetter(str.charAt(left))) {
-                s= s.append(str.charAt(left));
+        char ch[] = str.toCharArray();
+        int left = 0;
+        int right = str.length()-1;
+        while (left < right) {
+            if (!Character.isLetter(ch[left]))
+                left++;
+            else if (!Character.isLetter(ch[right])) {
+                right--;
+
             }
-            if
+            else {
+                char temp = ch[left];
+                ch[left] = ch[right];
+                ch[right]=temp;
+                left++;
+                right--;
+            }
 
         }
+        return new String(ch);
+
     }
 }
